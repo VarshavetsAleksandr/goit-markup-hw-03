@@ -28,6 +28,28 @@
 
 /**
   |============================
+  | Reset and Normolize
+  |============================
+*/
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+  |============================
   | Body
   |============================
 */
@@ -153,6 +175,10 @@ body {
     letter-spacing: 0.02em;
     color: var(--color-light);
     text-align: center;
+    width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-section-btn {
@@ -164,6 +190,12 @@ body {
     color: var(--color-light);
     background-color: var(--color-iris);
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .hero-section-btn:hover,
@@ -183,9 +215,13 @@ body {
 
 .advantages-list {}
 
-.advantages-list-item {}
+.advantages-list-item {
+    width: 264px;
+}
 
-.advantages-list-item-subtitle {}
+.advantages-list-item-subtitle {
+    margin-bottom: 8px;
+}
 
 .advantages-list-item-desc {
     line-height: 1.5;
@@ -209,6 +245,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-navy-blue);
+    margin-bottom: 72px;
 }
 
 .works-list {}
@@ -236,17 +273,31 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-navy-blue);
+    margin-bottom: 72px;
 }
 
 .team-list {}
 
 .team-list-item {
     background-color: var(--color-light);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    width: 264px;
 }
 
-.team-list-img {}
+.team-list-img {
+    margin-bottom: 32px;
+}
 
-.team-list-subtitle {}
+.team-card-text-content {
+    width: 232px;
+    text-align: center;
+}
+
+.team-list-subtitle {
+    margin-bottom: 8px;
+}
 
 .team-list-desc {
     line-height: 1.5;
@@ -261,6 +312,10 @@ body {
 
 .footer {
     background-color: var(--color-navy-blue);
+}
+
+.footer-content {
+    width: 264px;
 }
 
 .footer-link {
@@ -278,6 +333,7 @@ body {
     color: var(--color-cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 16px;
 }
 
 .footer-link-desc {
@@ -320,11 +376,17 @@ body {
 
 .card-list {}
 
-.card-list-item {}
+.card-list-item {
+    width: 360px;
+}
 
 .card-list-item-link {}
 
-.link {}
+.portfolio-card-text-content {}
+
+.card-list-img {
+    margin-bottom: 32px;
+}
 
 .card-subtitle {
     font-family: var(--primary-font);
@@ -333,6 +395,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
+    margin-bottom: 8px;
 }
 
 .card-desc {
