@@ -563,8 +563,6 @@ body {
 }
 
 .card-list-item {
-    --indent: 24px;
-    --item: 3;
     width: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
 }
 
