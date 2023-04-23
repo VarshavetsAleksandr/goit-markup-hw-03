@@ -36,7 +36,7 @@
 
 /**
   |============================
-  | Reset and Normolize
+  | RESET AND NORMALIZE STYLES
   |============================
 */
 img {
@@ -63,7 +63,7 @@ a {
 
 /**
   |============================
-  | Body
+  | BODY STYLES
   |============================
 */
 
@@ -77,9 +77,22 @@ body {
 
 /**
   |============================
-  | Base styles
+  | BASE STYLES
   |============================
 */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .subtitle {
     font-family: var(--primary-font);
     font-weight: 500;
@@ -99,19 +112,6 @@ body {
     text-decoration: none;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
-
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -123,45 +123,51 @@ body {
 
 /**
   |============================
-  | Header
+  | HEADER SECTION
   |============================
 */
 .header {
+    /* color */
     background: #FFFFFF;
-    /* CORNFLOWER */
-
     border-bottom: 1px solid var(--color-cornflower);
 }
 
 .header-container {
+    /* flex-box */
     display: flex;
     align-items: center;
 }
 
 .nav {
+    /* flex-box */
     display: flex;
     margin-right: auto;
     align-items: center;
 }
 
 .nav-logo {
+    /* text setting */
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    /* color */
     color: var(--color-iris);
+    /* flex-box */
     margin-right: 76px;
     display: flex;
 
 }
 
 .nav-logo-desc {
+    /* color */
     color: var(--color-navy-blue);
 }
 
 .nav-list {
+    /* flex-box */
     display: flex;
     gap: 40px;
 }
@@ -169,67 +175,90 @@ body {
 .nav-list-item {}
 
 .nav-list-item-link {
+    /* font setting */
     font-weight: 500;
     color: var(--color-navy-blue);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    /* flex-box */
     display: block;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
+/**
+  |============================
+  | HOVER and FOCUS setting
+  |============================
+*/
 .nav-list-item-link:hover,
 .nav-list-item-link:focus {
+    /* color */
     color: var(--color-ocean);
 }
 
 .address {
+    /* font setting */
     font-style: normal;
 }
 
 .address-list {
+    /* flex-box */
     display: flex;
+    gap: 40px;
 }
 
 .address-list-item {}
 
 .address-list-item-link {
+    /* color */
     color: var(--color-slate);
+    /* font setting */
     line-height: 1.5;
     letter-spacing: 0.02em;
+    /* flex-box */
     margin-right: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
+/**
+  |============================
+  | HOVER and FOCUS seting
+  |============================
+*/
 .address-list-item-link:hover,
 .address-list-item-link:focus {
+    /* color */
     color: var(--color-ocean);
 }
 
 /**
   |============================
-  | hero section
+  | HERO SECTION
   |============================
 */
 
 .hero-section {
+    /* color */
     background-color: var(--color-navy-blue);
-
-}
-
-.hero-container {
+    /* flex-box */
     padding-top: 188px;
     padding-bottom: 188px;
 }
 
+.hero-container {}
+
 .hero-section-title {
+    /* font setting */
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    /* color */
     color: var(--color-light);
+    /* flex-box */
     text-align: center;
     max-width: 496px;
     margin-bottom: 48px;
@@ -238,16 +267,18 @@ body {
 }
 
 .hero-section-btn {
+    /* font setting */
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    /* color */
     color: var(--color-light);
     background-color: var(--color-iris);
-    cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    /* flex-box */
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 32px;
@@ -259,6 +290,11 @@ body {
     border: none;
 }
 
+/**
+  |============================
+  | HOVER and FOCUS setting
+  |============================
+*/
 .hero-section-btn:hover,
 .hero-section-btn:focus {
     background-color: var(--color-ocean);
@@ -266,18 +302,18 @@ body {
 
 /**
   |============================
-  | advantages section - секция наши преимущества
+  | ADVANTAGES SECTION
   |============================
 */
 
 .advantages {
+    /* flex-box */
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.visually-hidden {}
-
 .advantages-list {
+    /* flex-box */
     display: flex;
     gap: 24px;
 }
@@ -297,7 +333,7 @@ body {
 
 /**
   |============================
-  | works section - види робіт компанії
+  | WORKS SECTION
   |============================
 */
 
@@ -306,6 +342,7 @@ body {
 }
 
 .works-title {
+    /* font setting  */
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 36px;
@@ -313,11 +350,14 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    /* color */
     color: var(--color-navy-blue);
+    /* flex-box */
     margin-bottom: 72px;
 }
 
 .works-list {
+    /* flex-box */
     display: flex;
     gap: 24px;
 }
@@ -328,17 +368,20 @@ body {
 
 /**
   |============================
-  | My team section
+  | TEAM SECTION
   |============================
 */
 
 .team {
+    /* color */
     background-color: var(--color-cloud);
+    /* flex-box */
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
 .team-title {
+    /* font setting */
     font-family: var(--primary-font);
     font-weight: 700;
     font-size: 36px;
@@ -346,35 +389,40 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    /* color */
     color: var(--color-navy-blue);
+    /* flex-box */
     margin-bottom: 72px;
 }
 
 .team-list {
+    /* flex-box */
     display: flex;
     gap: 24px;
 
 }
 
 .team-list-item {
+    /* color */
     background-color: var(--color-light);
     background: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    /* flex-box */
     width: 264px;
 }
 
-.team-list-img {
-    margin-bottom: 0;
-}
+.team-list-img {}
 
 .team-card-text-content {
+    /* flex-box */
     width: 232px;
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
+    margin: 0 auto;
 
 }
 
@@ -383,18 +431,21 @@ body {
 }
 
 .team-list-desc {
+    /* font setting */
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
 /**
   |============================
-  | Footer section
+  | FOOTER SECTION
   |============================
 */
 
 .footer {
+    /* color */
     background-color: var(--color-navy-blue);
+    /* flex-box */
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -405,25 +456,32 @@ body {
 }
 
 .footer-link {
+    /* font setting */
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    /* color */
     color: var(--color-iris);
+    /* flex-box */
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-desc {
+    /* color */
     color: var(--color-cloud);
+    /* font-setting */
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 16px;
+    /* flex-box */
     max-width: 264px;
 }
 
 .footer-link-desc {
+    /* color */
     color: var(--color-cloud);
 }
 
@@ -435,6 +493,7 @@ body {
 .filter {}
 
 .filter-list {
+    /* flex-box */
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -445,20 +504,27 @@ body {
 .filter-list-item {}
 
 .filter-list-item-btn {
+    /* font seting */
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    /* color */
     background-color: var(--color-cloud);
     color: var(--color-iris);
-    cursor: pointer;
+    /* flex-box */
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 24px;
     padding-right: 24px;
 }
 
+/**
+  |============================
+  | HOVER and FOCUS setting
+  |============================
+*/
 .filter-list-item-btn:hover,
 .filter-list-item-btn:focus {
     background-color: var(--color-ocean);
@@ -470,6 +536,7 @@ body {
 }
 
 .card-list {
+    /* flex-box */
     display: flex;
     flex-wrap: wrap;
 }
@@ -489,18 +556,23 @@ body {
 }
 
 .card-subtitle {
+    /* font setting */
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    /* color */
     color: var(--color-navy-blue);
+    /* flex-box */
     margin-bottom: 8px;
 }
 
 .card-desc {
+    /* font setting */
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    /* color */
     color: var(--color-slate);
 }
