@@ -217,7 +217,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     /* flex-box */
-    margin-right: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -424,13 +423,11 @@ body {
 
 .team-card-text-content {
     /* flex-box */
-    width: 232px;
     text-align: center;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
     padding-right: 16px;
-    margin: 0 auto;
 }
 
 .team-list-subtitle {
@@ -569,9 +566,6 @@ body {
     --indent: 24px;
     --item: 3;
     width: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
-    border: 1px solid #E7E9FC;
-    display: flex;
-    justify-content: center;
 }
 
 .card-list-item-link {}
